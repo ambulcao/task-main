@@ -1,2 +1,3 @@
-# flutter-taski-main
-Flutter todo app com mvvm
+# todo_task
+
+A new Flutter project.
