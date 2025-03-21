@@ -11,7 +11,7 @@ class TodoTaskModel {
     description = json['description'];
     dueDate = json['dueDate'];
     priority = json['priority'];
-    createdBy = json['createdBy' != null ? CreatedBy.fromJson(json['createdBy']) : null ];
+    createdBy = json['createdBy'] != null ? CreatedBy.fromJson(json['createdBy']) : null;
   }
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
