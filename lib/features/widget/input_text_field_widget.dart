@@ -7,7 +7,8 @@ class InputTextField extends StatelessWidget {
     this.suffixIcon,
     required this.controller,
     this.obscureText,
-    this.validator
+    this.validator,
+    this.isreadonly = false,
   });
 
   final String hintText;
@@ -16,6 +17,7 @@ class InputTextField extends StatelessWidget {
   final TextEditingController controller;
   final bool? obscureText;
   final String? Function(String?)? validator;
+  final bool isreadonly;
 
   @override
   Widget build(BuildContext context) {
