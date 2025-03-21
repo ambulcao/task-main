@@ -8,10 +8,25 @@ class TodoTaskView extends StatefulWidget {
 }
 
 class _TodoTaskViewState extends State<TodoTaskView> {
+  TextEditingController titleController = TextEditingController();
+  TextEditingController descriptionController = TextEditingController();
+  TextEditingController dueDateController = TextEditingController();
+  TextEditingController createdByNameController = TextEditingController();
+  TextEditingController createdByEmailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(title: Text("Todo Task"),
+         backgroundColor: Colors.blueGrey,
+         centerTitle: true,
+      ),
+      body: Container(
+        child: Column(
+          children: [
+
+          ],
+        )
+      )
     );
   }
 }
